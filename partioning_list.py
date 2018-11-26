@@ -8,8 +8,10 @@ def add_list(l):
 for i in range(1,len(l)):
     #checking whether sum of sub lists are equal.
     if add_list(l[:i])==add_list(l[i:]):
-        print("list can be partitioning with: ",(l[:i],l[i:]))
+        print("list can be partitioned ")
         break
+    else:
+        print("list can not be partitioned")
         
 """
 Worst case order of algorithm will be "O(n**2)".

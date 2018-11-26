@@ -2,7 +2,6 @@ def partioning_list(l):
     mid_val=len(l)//2
     can_partitioned=False
     while mid_val>0 :
-        print(mid_val)
         if sum(l[:mid_val])==sum(l[mid_val:]):
             can_partitioned=True
             break
